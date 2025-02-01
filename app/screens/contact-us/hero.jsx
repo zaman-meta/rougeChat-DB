@@ -12,6 +12,8 @@ const GetContact = () => {
     },
   });
   const titleHeading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 500,
     background: "#FFFFFF",
     border: "1px solid #D5E2ED",
     borderRadius: "30px",
@@ -29,6 +31,8 @@ const GetContact = () => {
   });
 
   const FirstHeading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -121,6 +125,7 @@ const GetContact = () => {
               <Typography
                 variant="h2"
                 sx={{
+                  fontFamily: "Be Vietnam Pro, sans-serif",
                   lineHeight: "35.13px",
                   fontSize: "28px",
                   fontWeight: "600",

@@ -32,6 +32,8 @@ const GetHero = () => {
     },
   });
   const titleHeading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 500,
     background: "#FFFFFF",
     border: "1px solid #D5E2ED",
     borderRadius: "30px",
@@ -48,6 +50,8 @@ const GetHero = () => {
     },
   });
   const Heading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -59,6 +63,9 @@ const GetHero = () => {
     },
   });
   const FirstHeading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
+    maxWidth: "480px",
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -203,8 +210,9 @@ const GetHero = () => {
               }}
             >
               <Typography
-                variant="h2"
+                variant="body1"
                 sx={{
+                  fontFamily: "Be Vietnam Pro, sans-serif",
                   lineHeight: "35.13px",
                   fontSize: "28px",
                   fontWeight: "600",

@@ -20,7 +20,6 @@ const RougeHome = () => {
     maxWidth: "440px",
     margin: "auto",
     marginBottom: "40px",
-    // marginTop: "15px",
     fontSize: "14px",
     fontWight: 500,
     [theme.breakpoints.down("md")]: {
@@ -28,11 +27,13 @@ const RougeHome = () => {
     },
   });
   const Heading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     lineHeight: "5.3rem",
     fontSize: "70px",
+    fontWeight: 700,
     [theme.breakpoints.down("sm")]: {
       fontSize: "24px",
       lineHeight: "1.8rem",
@@ -42,6 +43,7 @@ const RougeHome = () => {
   const SubHeading = (theme) => ({
     maxWidth: "797px",
     margin: "auto",
+    fontFamily: "Be Vietnam Pro, sans-serif",
     marginBottom: "20px",
     marginTop: "60px",
     fontSize: "16px",

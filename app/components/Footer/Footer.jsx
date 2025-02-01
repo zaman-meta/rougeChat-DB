@@ -23,7 +23,7 @@ const Footer = () => {
     >
       <Box className="container">
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={4} md={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Box sx={{ width: "226px" }} variant="h6" gutterBottom>
               <Image
                 src={logo}
@@ -35,7 +35,12 @@ const Footer = () => {
             </Box>
             <Typography
               variant="body1"
-              sx={{ mt: "23px", fontSize: "16px", color: "#FFFFFF99" }}
+              sx={{
+                mt: "23px",
+                fontSize: "16px",
+                color: "#FFFFFF99",
+                maxWidth: "470px",
+              }}
             >
               Rougechat DB empowers non-technical users to extract insights from
               complex databases using natural language. By training on

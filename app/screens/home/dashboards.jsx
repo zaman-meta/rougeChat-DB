@@ -15,6 +15,8 @@ const Dashboards = () => {
   const Heading = (theme) => ({
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     WebkitTextFillColor: "transparent",
     lineHeight: "53.13px",
     fontWight: 700,

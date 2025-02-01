@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../assets/rougechat_logo.png";
-import PrimaryButton from "../UI/Buttons/PrimaryButton";
 import OutlinedButton from "../UI/Buttons/OutlinedButton";
 import { usePathname } from "next/navigation";
 import { navbarData } from "@/@json-db";
@@ -18,11 +16,11 @@ const Navbar = () => {
     <Box
       sx={{
         width: "100%",
-        background: "#FFF",
+        background: "#F0FBFF",
         boxShadow: { xs: "none" },
       }}
     >
-      <Box sx={{ width: "100%" }}>
+      <Box sx={{ py: "24px", width: "100%" }}>
         <Box
           className="container"
           sx={{
@@ -38,7 +36,10 @@ const Navbar = () => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              padding: { xs: "28px 0px", md: "17px 0px" },
+              padding: { xs: "13px 16px" },
+              border: "1px solid #D5E2ED",
+              borderRadius: "80px",
+              // px: "12px",
             }}
           >
             <Link
@@ -48,20 +49,19 @@ const Navbar = () => {
             >
               <Box
                 sx={{
-                  width: { xs: "184px", md: "184px", lg: "184px", xl: "184px" },
-                  height: { xs: "38px", md: "38px", lg: "38px", xl: "38px" },
+                  width: { xs: "154px", md: "154px", lg: "154px", xl: "154px" },
                 }}
               >
                 <Image
-                  src={logo}
+                  src={"/navbar_logo.svg"}
                   style={{
                     flexShrink: 0,
-                    width: "170px", 
+                    width: "154px",
                     objectFit: "fill",
                   }}
                   alt="Logo"
                   quality={100}
-                  width={184}
+                  width={154}
                   height={38}
                   priority
                 />
@@ -92,8 +92,8 @@ const Navbar = () => {
                         sx={{
                           fontSize: { md: "16px", xl: "16px" },
                           fontStyle: "normal",
-                          fontWeight: 400,
-                          fontFamily: "Rubik, sans-serif",
+                          fontWeight: 700,
+                          fontFamily: "Be Vietnam Pro, sans-serif",
                           textTransform: "capitalize",
                           lineHeight: "normal",
                           color: pathname === lt?.link ? "#0B7FE4" : "#000",
@@ -110,14 +110,31 @@ const Navbar = () => {
                   </li>
                 );
               })}
-              <Box>
-                <Link href="/" passHref style={{ marginRight: "16px" }}>
-                  <OutlinedButton label="Contact Us" />
-                </Link>
-                <Link href="/" passHref>
-                  <PrimaryButton label="Book a Demo" />
-                </Link>
-              </Box>
+              <Link href="/contact-us" passHref style={{ marginRight: "16px" }}>
+                <Box>
+                  <Typography
+                    sx={{
+                      background: "#000",
+                      color: "#ffffff",
+                      border: "1px solid #000",
+                      cursor: "pointer",
+                      "&:hover": {
+                        color: "#000",
+                        background: "#ffffff",
+                        transition: ".3s linear",
+                      },
+                      borderRadius: "40px",
+                      padding: "8px 16px",
+                      maxWidth: "140px",
+                      margin: "auto",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Contact Us
+                  </Typography>
+                </Box>
+              </Link>
             </List>
 
             {/* DROP DOWN BUTTON ON THE MOBILE SIZE */}
@@ -164,54 +181,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-/* 
-  <AppBar
-      className="container"
-      position="static"
-      sx={{
-        boxShadow: "none",
-        backgroundColor: "transparent",
-        color: "#000000",
-        my: "35px",
-      }}
-    >
-      <Toolbar  >
-        <Box sx={{ flexGrow: 1 }}>
-          <Box component="a" sx={{ display: "flex", alignItems: "center" }}>
-            <Image src={logo} alt="Logo" width={184} height={38} />
-          </Box>
-        </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            flexGrow: 0,
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "38px",
-            fontFamily: "Rubik, sans-serif",
-            zIndex: 100,
-          }}
-        >
-          <Link href="/" passHref>
-            Home
-          </Link>
-          <Link href="/scenes/about" passHref>
-            About Us
-          </Link>
-          <Link href="/scenes/solutions" passHref>
-            Solutions
-          </Link>
-          <Box>
-            <Link href="/" passHref style={{ marginRight: "16px" }}>
-              <OutlinedButton label="Contact Us" />
-            </Link>
-            <Link href="/" passHref>
-              <PrimaryButton label="Book a Demo" />
-            </Link>
-          </Box>
-        </Box>
-      </Toolbar>
-    </AppBar>
-*/

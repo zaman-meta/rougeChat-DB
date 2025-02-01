@@ -49,6 +49,8 @@ const RougeChatDBWhy = () => {
     },
   });
   const Heading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",

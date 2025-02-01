@@ -14,6 +14,8 @@ const RougeAgent = () => {
   });
 
   const Heading = (theme) => ({
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     color: "#FFF",
     lineHeight: "4.8rem",
     textAlign: "left",

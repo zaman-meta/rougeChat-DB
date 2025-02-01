@@ -59,6 +59,8 @@ const Insights = () => {
     background: "linear-gradient(90deg, #E22E3C 0%, #0E90FD 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    fontFamily: "Be Vietnam Pro, sans-serif",
+    fontWeight: 700,
     lineHeight: "53.13px",
     textAlign: "left",
     fontSize: "42px",

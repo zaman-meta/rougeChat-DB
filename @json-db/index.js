@@ -1,6 +1,6 @@
 export const navbarData = {
   companyName: {
-    title: "rougeIntel",
+    title: "rougeChat DB",
     link: "/",
   },
   navbarList: [
@@ -10,11 +10,15 @@ export const navbarData = {
     },
     {
       title: "About",
-      link: "/scenes/about",
+      link: "#",
     },
     {
       title: "Solutions",
-      link: "/scenes/solutions",
+      link: "#",
+    },
+    {
+      title: "Pricing",
+      link: "#",
     },
   ],
 };
