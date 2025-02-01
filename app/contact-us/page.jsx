@@ -1,7 +1,7 @@
 import PageBody from "./PageBody";
 
 export const metadata = {
-  title: "RougeChat DB | Home",
+  title: "RougeChat DB | Contact Us",
   description:
     "Stop struggling with complex queries—ask your question, and Rougechat DB delivers instant insights. Simplify data analysis and make smarter, data-driven decisions effortlessly.",
   icons: {
@@ -10,6 +10,8 @@ export const metadata = {
   },
 };
 
-export default function page() {
+const page = async () => {
   return <PageBody />;
-}
+};
+
+export default page;

@@ -1,7 +1,7 @@
 import { styled } from "@mui/styles";
 import { startTransition, useState } from "react";
 import { Alert, Box, Button, TextField, Typography } from "@mui/material";
-import sendContactEmail from "../../../../lib/sendContactEmail";
+import sendContactEmail from "../../../lib/sendContactEmail";
 
 const CssTextField = styled(TextField)({
   marginBottom: "20px",
