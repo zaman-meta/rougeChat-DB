@@ -75,48 +75,6 @@ const Footer = () => {
                   Home
                 </Link>
               </Box>
-              <Box mb={{ cursor: "no-drop", xs: "10px", sm: "15px" }}>
-                <Link
-                  href="#"
-                  color="inherit"
-                  underline="none"
-                  style={{
-                    fontFamily: "Urbanist, sans-serif",
-                    fontSize: "16px",
-                    color: "#FFFFFF99",
-                  }}
-                >
-                  About
-                </Link>
-              </Box>
-              <Box mb={{ xs: "10px", sm: "15px" }}>
-                <Link
-                  href="#"
-                  color="inherit"
-                  underline="none"
-                  style={{
-                    fontFamily: "Urbanist, sans-serif",
-                    fontSize: "16px",
-                    color: "#FFFFFF99",
-                  }}
-                >
-                  Solutions
-                </Link>
-              </Box>
-              <Box mb={{ cursor: "no-drop", xs: "10px", sm: "15px" }}>
-                <Link
-                  href="#"
-                  color="inherit"
-                  underline="none"
-                  style={{
-                    fontFamily: "Urbanist, sans-serif",
-                    fontSize: "16px",
-                    color: "#FFFFFF99",
-                  }}
-                >
-                  Pricing
-                </Link>
-              </Box>
             </Box>
           </Grid>
           <Grid
