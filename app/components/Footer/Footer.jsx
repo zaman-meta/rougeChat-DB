@@ -75,6 +75,20 @@ const Footer = () => {
                   Home
                 </Link>
               </Box>
+              <Box mb={{ xs: "10px", sm: "15px" }}>
+                <Link
+                  href="/contact-us"
+                  color="inherit"
+                  underline="none"
+                  style={{
+                    fontFamily: "Urbanist, sans-serif",
+                    fontSize: "16px",
+                    color: "#FFFFFF99",
+                  }}
+                >
+                  Contact Us
+                </Link>
+              </Box>
             </Box>
           </Grid>
           <Grid
@@ -134,7 +148,7 @@ const Footer = () => {
                 }}
               >
                 <EmailIcon sx={{ mr: "13px", color: "#0F8EFF" }} />
-                <span> info@metarouge.com</span>
+                <span> sales@metraouge.com.au</span>
               </Typography>
             </Box>
           </Grid>
