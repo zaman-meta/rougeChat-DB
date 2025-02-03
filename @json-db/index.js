@@ -8,17 +8,5 @@ export const navbarData = {
       title: "Home",
       link: "/",
     },
-    {
-      title: "About",
-      link: "#",
-    },
-    {
-      title: "Solutions",
-      link: "#",
-    },
-    {
-      title: "Pricing",
-      link: "#",
-    },
   ],
 };
