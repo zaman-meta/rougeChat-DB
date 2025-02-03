@@ -19,8 +19,8 @@ const fakeData = [
   {
     image_url: "/images/icon/mail.png",
     title: "Mail to",
-    content: "info@metarouge.com",
-    href: "mailto:info@metarouge.com.au",
+    content: "sales@metarouge.com.au",
+    href: "mailto:sales@metarouge.com.au",
   },
 ];
 
