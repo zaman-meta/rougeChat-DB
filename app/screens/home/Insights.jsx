@@ -3,6 +3,7 @@ import React from "react";
 import { CustomBox } from "@/app/components";
 import Image from "next/image";
 import { CustomWrapper } from "@/app/components";
+import { useRouter } from "next/navigation";
 
 const Insights = () => {
   const imageCover = (theme) => ({
@@ -126,6 +127,8 @@ const Insights = () => {
     },
   });
 
+    const router = useRouter();
+
   return (
     <Box sx={CoverStyle}>
       <CustomWrapper bgColor={"#E3F5FE3b"}>
@@ -149,7 +152,7 @@ const Insights = () => {
                     Trained on real-world examples, Rougechat DB simplifies data
                     analysis and drives smarter decisions.
                   </Typography>
-                  <Typography variant="body1" sx={getContactButton}>
+                  <Typography onClick={() => router.push("/contact-us")} variant="body1" sx={getContactButton}>
                     Contact Us
                   </Typography>
                 </Box>
