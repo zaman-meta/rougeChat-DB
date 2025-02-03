@@ -74,6 +74,34 @@ const MobileNavbar = ({ isMenuOpen, setIsMenuOpen, navbarData }) => {
                   </Link>
                 </li>
               ))}
+              <li style={{ marginTop: "15px" }} key={index}>
+                  <Link
+                    href={'/contact-us'}
+                    aria-label={'contact-us'}
+                    title={'contact-us'}
+                    style={{
+                      color: pathname === '/contact-us' ? "#000" : "#000",
+                      opacity: pathname === lt?.link ? 1 : 0.7,
+                      fontSize: "20px",
+                      paddingTop: "10px",
+                      paddingBottom: "10px",
+                      fontStyle: "normal",
+                      fontWeight: pathname === '/contact-us' ? 700 : 200,
+                      lineHeight: "normal",
+                      transitionDuration: "200ms",
+                      fontFamily: "Rubik, sans-serif",
+                      transitionTimingFunction: "cubic-bezier(0.4,0,1,1)",
+                      textTransform: "capitalize",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "15px",
+                      marginLeft: "46px",
+                    }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span>Contact Us</span>
+                  </Link>
+                </li>
             </ul>
           </Box>
 
