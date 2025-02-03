@@ -74,14 +74,14 @@ const MobileNavbar = ({ isMenuOpen, setIsMenuOpen, navbarData }) => {
                   </Link>
                 </li>
               ))}
-              <li style={{ marginTop: "15px" }} key={index}>
+              <li style={{ marginTop: "15px" }}>
                   <Link
                     href={'/contact-us'}
                     aria-label={'contact-us'}
                     title={'contact-us'}
                     style={{
                       color: pathname === '/contact-us' ? "#000" : "#000",
-                      opacity: pathname === lt?.link ? 1 : 0.7,
+                      opacity: pathname === '/contact-us' ? 1 : 0.7,
                       fontSize: "20px",
                       paddingTop: "10px",
                       paddingBottom: "10px",
